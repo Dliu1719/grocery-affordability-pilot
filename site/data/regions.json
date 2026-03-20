@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "downtown",
+    "name": "Downtown Vancouver"
+  },
+  {
+    "slug": "west-end",
+    "name": "West End"
+  },
+  {
+    "slug": "kitsilano",
+    "name": "Kitsilano"
+  },
+  {
+    "slug": "mount-pleasant",
+    "name": "Mount Pleasant"
+  },
+  {
+    "slug": "east-vancouver",
+    "name": "East Vancouver (Commercial Drive)"
+  },
+  {
+    "slug": "south-vancouver-sunset",
+    "name": "South Vancouver (Sunset)"
+  },
+  {
+    "slug": "marpole",
+    "name": "Marpole"
+  },
+  {
+    "slug": "ubc-west-point-grey",
+    "name": "UBC / West Point Grey"
+  }
+]

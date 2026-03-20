@@ -1,0 +1,50 @@
+[
+  {
+    "week_start": "2026-03-20",
+    "store_name": "T&T Supermarket (International Village)",
+    "store_chain": "T&T",
+    "area": "Downtown",
+    "city": "Vancouver",
+    "flyer_url": "https://www.tntsupermarket.com/eng/store-flyer",
+    "flyer_format": "url/pdf/image",
+    "status": "updated",
+    "last_checked": "2026-03-20 19:56 UTC",
+    "notes": "official store-flyer page (preferred)"
+  },
+  {
+    "week_start": "2026-03-20",
+    "store_name": "H Mart Downtown",
+    "store_chain": "H Mart",
+    "area": "Downtown",
+    "city": "Vancouver",
+    "flyer_url": "https://hmart.ca/index.php?pn=flyer",
+    "flyer_format": "url/pdf/image",
+    "status": "updated",
+    "last_checked": "2026-03-20 19:56 UTC",
+    "notes": "official flyer page (preferred)"
+  },
+  {
+    "week_start": "2026-03-20",
+    "store_name": "Safeway (Davie St)",
+    "store_chain": "Safeway",
+    "area": "Downtown",
+    "city": "Vancouver",
+    "flyer_url": "https://www.safeway.ca/flyer/",
+    "flyer_format": "url/pdf/image",
+    "status": "updated",
+    "last_checked": "2026-03-20 19:56 UTC",
+    "notes": "official flyer page"
+  },
+  {
+    "week_start": "2026-03-20",
+    "store_name": "IGA (Downtown)",
+    "store_chain": "IGA",
+    "area": "Downtown",
+    "city": "Vancouver",
+    "flyer_url": "https://www.iga.net/en/flyer",
+    "flyer_format": "url/pdf/image",
+    "status": "updated",
+    "last_checked": "2026-03-20 19:56 UTC",
+    "notes": "official flyer page (banner-level)"
+  }
+]

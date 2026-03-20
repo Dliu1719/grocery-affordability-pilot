@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Downtown Vancouver Flyer Hub (Pilot)</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; background:#f7f7f9; color:#222; }
+    h1 { margin-bottom: 6px; }
+    .sub { color:#555; margin-bottom: 18px; }
+    table { width:100%; border-collapse: collapse; background:#fff; }
+    th, td { border:1px solid #ddd; padding:10px; text-align:left; font-size:14px; }
+    th { background:#f0f2f5; }
+    .pill { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; }
+    .updated { background:#e7f8ee; color:#136d3d; }
+    .pending { background:#fff5e5; color:#8a5a00; }
+    .no_update { background:#fdecec; color:#8a1f1f; }
+  </style>
+</head>
+<body>
+  <h1>Downtown Vancouver Flyer Hub (Pilot)</h1>
+  <div class="sub">Pilot stores: T&T, H Mart, Safeway, IGA · Weekly refresh</div>
+  <table id="flyerTable">
+    <thead>
+      <tr>
+        <th>Store</th>
+        <th>Area</th>
+        <th>Flyer</th>
+        <th>Status</th>
+        <th>Last Checked</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+<script>
+async function loadData() {
+  const res = await fetch('./data/flyers_weekly.json');
+  const rows = await res.json();
+  const tbody = document.querySelector('#flyerTable tbody');
+  tbody.innerHTML = '';
+
+  rows.forEach(r => {
+    const tr = document.createElement('tr');
+    const statusClass = (r.status || 'pending').replace(/\s+/g,'_');
+    tr.innerHTML = `
+      <td>${r.store_name || ''}</td>
+      <td>${r.area || ''}, ${r.city || ''}</td>
+      <td>${r.flyer_url ? `<a href="${r.flyer_url}" target="_blank">Open Flyer</a>` : '-'}</td>
+      <td><span class="pill ${statusClass}">${r.status || 'pending'}</span></td>
+      <td>${r.last_checked || '-'}</td>
+      <td>${r.notes || ''}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+loadData();
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "downtown": [
+    {
+      "store": "T&T Supermarket (International Village)",
+      "chain": "T&T",
+      "address": "179 Keefer Pl, Vancouver",
+      "flyer_url": "https://www.tntsupermarket.com/eng/store-flyer",
+      "thumbnail_url": "",
+      "status": "updated",
+      "last_checked": "2026-03-20 20:26 UTC"
+    },
+    {
+      "store": "H Mart Downtown",
+      "chain": "H Mart",
+      "address": "590 Robson St, Vancouver",
+      "flyer_url": "https://hmart.ca/index.php?pn=flyer",
+      "thumbnail_url": "",
+      "status": "updated",
+      "last_checked": "2026-03-20 20:26 UTC"
+    },
+    {
+      "store": "Safeway (Davie St)",
+      "chain": "Safeway",
+      "address": "1611 Davie St, Vancouver",
+      "flyer_url": "https://www.safeway.ca/flyer/",
+      "thumbnail_url": "",
+      "status": "updated",
+      "last_checked": "2026-03-20 20:26 UTC"
+    },
+    {
+      "store": "IGA (Downtown)",
+      "chain": "IGA",
+      "address": "Downtown Vancouver",
+      "flyer_url": "https://www.iga.net/en/flyer",
+      "thumbnail_url": "",
+      "status": "updated",
+      "last_checked": "2026-03-20 20:26 UTC"
+    }
+  ],
+  "west-end": [],
+  "kitsilano": [],
+  "mount-pleasant": [],
+  "east-vancouver": [],
+  "south-vancouver-sunset": [],
+  "marpole": [],
+  "ubc-west-point-grey": []
+}
